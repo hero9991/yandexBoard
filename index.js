@@ -27,7 +27,7 @@ let program = () => {
         }
     }
 }
-if(!isNaN(M) && !isNaN(N)){
-setInterval(program, 1000)
-program()
-} else alert ('введены некорректные данные')
+if (!isNaN(M) && !isNaN(N)) {
+    setInterval(program, 1000)
+    program()
+} else alert('введены некорректные данные')
