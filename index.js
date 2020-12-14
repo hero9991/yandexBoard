@@ -21,7 +21,7 @@ let program = () => {
             i !== 0 && j !== N - 1 && a[i - 1][j + 1] && count++
             j !== 0 && i !== M - 1 && a[i + 1][j - 1] && count++
 
-            if (count < 2 || count > 3 && a[i][j] === 1) a[i][j] = 0
+            if ((count < 2 || count > 3) && a[i][j] === 1) a[i][j] = 0
             if (count === 3 && a[i][j] === 0) a[i][j] = 1
             count = 0
         }
